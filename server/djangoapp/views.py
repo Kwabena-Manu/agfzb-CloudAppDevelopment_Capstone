@@ -18,8 +18,8 @@ logger = logging.getLogger(__name__)
 
 
 # Create an `about` view to render a static about page
-# def about(request):
-# ...
+def about(request):
+    return render(request,"djangoapp/about.html")
 
 
 # Create a `contact` view to return a static contact page
@@ -52,3 +52,6 @@ def get_dealerships(request):
 # def add_review(request, dealer_id):
 # ...
 
+
+def test_page(request):
+    return render(request, "djangoapp/test.html")

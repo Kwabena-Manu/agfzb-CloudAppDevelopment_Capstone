@@ -10,7 +10,7 @@ urlpatterns = [
     # name the URL
 
     # path for about view
-
+    path('about',views.about, name="about"),
     # path for contact us view
 
     # path for registration
@@ -25,4 +25,5 @@ urlpatterns = [
 
     # path for add a review view
 
+    path('test', views.test_page, name="test"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
